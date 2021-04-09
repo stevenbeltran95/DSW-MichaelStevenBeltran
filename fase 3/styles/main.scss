@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body{
+    margin:0;
+    padding: 0;
+    background:peru;
+    color:ddd;
+    position:relative;
+    min-height: 100vh;
+    height: 300vh;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    img{
+        height: 30vp;
+
+    }
+}
+nav{
+    position:sticky;
+    top: 0;
+    background-color: blanchedalmond;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+   
+    a{
+        text-decoration: none;
+        color: inherit;
+        padding: 15px 20px;
+        transition: ease 1s;
+
+    }
+    
+
+  a:hover
+    {
+     background: black;
+        color: blanchedalmond;
+    }
+
+}
+
+.cuerpo 
+{
+    h1{
+        width: 60%;
+        text-align: left;
+        font-weight: bold;
+        opacity: 0.5;
+        color:rgb(22, 21, 22);
+        font-family: 'Permanent Marker','Courier New', Courier, monospace;
+        
+    }
+    h3{
+        width: 74%;
+        text-align:center;
+        font-style: italic;
+        float: left;
+    }
+
+}
+ 
+nav ul, li{
+    list-style: none;
+}
+
+/*sub temas*/
+.subtemas{
+    position: absolute;
+    background-color:blanchedalmond;
+    color: black;
+    width: 20%;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 1.5s ;
+    
+}
+.subtemas li a{
+    display: block;
+    padding: 15px;
+    color: peru;
+    text-decoration: none;
+}
+
+nav li:hover .subtemas{
+    visibility: visible;
+    opacity: 1;
+   
+}
+/*sub digitales*/
+.subdigitales{
+    position: absolute;
+    background-color: blanchedalmond;
+    color: black;
+    width: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 1.5s ;
+}
+.subdigitales li a{
+    display: block;
+    padding: 15px;
+    color:peru;
+    text-decoration: none;
+}
+
+nav li:hover .subdigitales{
+    visibility: visible;
+    opacity: 1;
+   
+}
+/*sub aprendizaje*/
+.subaprendizaje{
+    position: absolute;
+    background-color: blanchedalmond;
+    color: black;
+    width: 12%;
+    visibility: hidden;
+    opacity: 0;
+    transition:opacity 1.5s ;
+}
+.subaprendizaje li a{
+    display: block;
+    padding: 15px;
+    color:peru;
+    text-decoration: none;
+}
+
+nav li:hover .subaprendizaje{
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    font-size: 20pt;
+    text-align: center;
+    bottom: 0%;
+
+}
+
+video{
+    width: 720px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    height: 25%;
+
+}
+ 
+
+
+@media only screen and(mas-width:500px)
+{
+    header{
+        img{
+            height:auto;
+            width:100%;
+        }
+    }
+}
